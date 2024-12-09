@@ -1,15 +1,15 @@
 import React from "react";
-import { getData } from "../public/js/data";
+import { getData } from "../Utils/js/data";
 import ContactList from "./ContactList";
 
 function ContactApp() {
     const contacts = getData();
-    return(
+    return (
         <div className="contact-app">
             <h1>Daftar Kontak</h1>
             <ContactList contacts={contacts} />
         </div>
-    ) 
+    );
 }
 
 export default ContactApp;
