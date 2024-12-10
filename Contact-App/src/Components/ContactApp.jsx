@@ -1,6 +1,7 @@
 import React from "react";
 import { getData } from "../Utils/js/data";
 import ContactList from "./ContactList";
+import FormClass from "./FormClass";
 
 class ContactApp extends React.Component {
     constructor(props) {
@@ -23,6 +24,7 @@ class ContactApp extends React.Component {
             <div className="contact-app">
                 <h1>Daftar Kontak</h1>
                 <ContactList contacts={this.state.contacts} onDelete={this.onDeleteHandler} />
+                <FormClass />
             </div>
         );
     }
